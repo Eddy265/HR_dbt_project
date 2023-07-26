@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_contacts
+    columns: 
+      - name: contact_id
+        description: primary key for the contacts table
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_departments
+    columns:
+      - name: department_id
+        description: primary key for stg_departments table
+        tests:
+          - unique
+          - not_null
+      - name: department_name
+        description: '{{ doc("dept_name") }}'
+        tests:
+          - accepted_values:
+              values:
+                - Accounting
+                - Training
+                - Product Management
+                - Services
+                - Sales
+                - Business Development
+                - Engineering
+                - Research and Development
+                - IT
+                - HR
+                - Legal
+  
+               

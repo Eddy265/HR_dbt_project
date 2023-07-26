@@ -39,4 +39,9 @@ models:
     intermediate:
       +materialized: view
     marts:
-      +materialized: table
+      Finance:
+        +schema: Finance
+        +materialized: table
+      HR:
+        +schema: HR
+        +materialized: table
