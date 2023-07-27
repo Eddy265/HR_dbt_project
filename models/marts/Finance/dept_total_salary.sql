@@ -25,7 +25,7 @@ emp as (
 output as (
     SELECT 
     department_name,
-    ROUND(AVG(salary_amount)) avg_salary
+    SUM(salary_amount) total_salary
     FROM depts d
     JOIN emp e on d.department_id = e.department_id
     JOIN salary s on e.employee_id = s.employee_id

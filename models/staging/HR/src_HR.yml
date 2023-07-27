@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: HR
-    description: a clone of the postgres HR database.
+    description: a clone of the postgres HR schema.
     database: HR
     schema: public
     tables:

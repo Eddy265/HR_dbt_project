@@ -45,3 +45,4 @@ models:
       HR:
         +schema: HR
         +materialized: table
+
