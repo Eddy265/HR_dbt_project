@@ -21,6 +21,8 @@ sources:
       - name: salaries
         description: This tabes hold all the salaries for all employees
         
+      - name: employeechurn
+        description: This is the employeechurn table of the Hr db 
 
   
     
